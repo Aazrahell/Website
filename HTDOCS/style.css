@@ -1,0 +1,148 @@
+body {
+    margin: auto;
+    background-color: #404040;
+}
+
+#logo {
+    margin: auto;
+    color: white;
+    margin-top: 20px;
+    font-size: 44px;
+    letter-spacing: 2px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.menu {
+    margin: auto;
+    width: 1500px;
+    background-color: #303030;
+    margin-top: 20px;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.option {
+    flex-grow: 1;
+    font-size: 25px;
+    padding: 15px;
+    opacity: 0.9;
+    text-align: center;
+    /* width: 12.25%; */
+}
+
+.option:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+a.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.panelLogowania,
+.panelRejestracji {
+    padding: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.zalogowanyUzytkownik {
+    margin-top: 300px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+    font-size: 25px;
+    width: 300px;
+    margin: 8px;
+    padding: 15px;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: gray;
+    width: 300px;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+input [type="submit"] {
+    background-color: gray;
+    width: 300px;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid black;
+}
+
+.komorka {
+    /* background-color: red; */
+    padding: 50px 100px 0px 100px;
+}
+
+table {
+    margin: auto;
+}
+
+.przywitanie {
+    text-align: center;
+    margin: 50px 0px -20px 0px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
