@@ -30,7 +30,7 @@ if ($conn == false) {
 
     if (count($errors) == 0) {
         // $pass = md5($pass);
-        $zapytanie = "SELECT * FROM test.login WHERE name='$login' AND pass='$pass'";
+        $zapytanie = "SELECT * FROM sql7629176.user WHERE name='$login' AND pass='$pass'";
         $wynik = mysqli_query($conn, $zapytanie);
         if (mysqli_num_rows($wynik) == 1) {
             $_SESSION['login'] = $login;

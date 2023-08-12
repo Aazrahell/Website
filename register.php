@@ -9,7 +9,7 @@ $email = $_POST['emailR'];
 $pass = $_POST['passR'];
 
 if (isset($login) && isset($email) && isset($pass)) {
-	$sql = "INSERT INTO test.login (id, name, pass, email)
+	$sql = "INSERT INTO sql7629176.user (id, name, pass, email)
 			VALUES ('','$login', '$pass', '$email')";
 	$result = mysqli_query($conn, $sql);
 	echo "UDALO SIE STWORZYC KONTO!";

@@ -7,7 +7,7 @@ include "dbconn.php";
 
 //$sql = "SELECT * FROM test.login WHERE name='$login' AND pass='$pass'";
 
-$sql = "SELECT * FROM test.login";
+$sql = "SELECT * FROM sql7629176.user";
 
 $result = mysqli_query($conn, $sql);
 
