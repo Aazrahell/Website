@@ -9,15 +9,13 @@
 </head>
 
 <body>
-    <div id="logo"> Moja strona XD </div>
+    <div id="logo"> Moja strona </div>
 
     <div class="menu">
         <div class="option">
             <a href="index.php" class="link"> Strona Glowna </a>
         </div>
-        <div class="option">
-            <a href="index.php" class="link"> Nauka </a>
-        </div>
+        <div class="option"> Nauka </div>
         <div class="option"> Statystyki </div>
         <div class="option"> Ciekawostki </div>
         <div class="option"> Ankiety </div>

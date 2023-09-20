@@ -1,25 +1,15 @@
 <?php
-include "header.php";
-
 session_start();
+
+include "header.php";
 
 include "dbconn.php";
 
-//$sql = "SELECT * FROM test.login WHERE name='$login' AND pass='$pass'";
-
-$sql = "SELECT * FROM sql7629176.user";
+$sql = "SELECT * FROM $dbName";
 
 $result = mysqli_query($conn, $sql);
 
 $row = mysqli_fetch_assoc($result);
-
-/*
-if(isset($_POST['login']) && isset($_POST['pass'])){
-
-    $_SESSION['user'] = $_POST['login'];
-}
-*/
-
 
 ?>
 

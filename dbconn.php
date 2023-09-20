@@ -1,12 +1,12 @@
 <?php
 
-$serverName = "sql7.freemysqlhosting.net";
+$serverName = "fdb1029.awardspace.net";
 
-$dbUsername = "sql7629176";
+$dbUsername = "4323805_aazrahell";
 
-$dbPassword = "ZnjJVNQyCC";
+$dbPassword = "VGbhD]:{7)SAFBVf";
 
-$dbName = "sql7629176.user";
+$dbName = "4323805_aazrahell.user";
 
 
 $conn = mysqli_connect($serverName, $dbUsername, $dbPassword);

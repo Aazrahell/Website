@@ -1,6 +1,7 @@
 <?php
-include "header.php";
 session_start();
+
+include "header.php";
 
 require_once "dbconn.php";
 
@@ -29,42 +30,25 @@ if ($conn == false) {
     }
 
     if (count($errors) == 0) {
-        // $pass = md5($pass);
-        $zapytanie = "SELECT * FROM sql7629176.user WHERE name='$login' AND pass='$pass'";
+        $pass = md5($pass);
+        $zapytanie = "SELECT * FROM $dbName WHERE name='$login' AND pass='$pass'";
         $wynik = mysqli_query($conn, $zapytanie);
         if (mysqli_num_rows($wynik) == 1) {
-            $_SESSION['login'] = $login;
+            $_SESSION['id'] = $login;
             $_SESSION['success'] = "Udalo sie zalogowac!";
+
+            sleep(5);
+
+            echo ("<script>window.location.href = 'loginSuccess.php';</script>");
+
         } else {
             array_push($errors, "Niepoprawna nazwa lub haslo.");
-            header('location: failed.php');
+            echo ("<script>window.location.href = 'failed.php';</script>");
             exit();
         }
     }
 }
 ?>
-
-<!-- <div id="container">
-        <div id="logo"> Nauka gry w warcaby </div>
-
-        <div id="menu">
-            <div class="option">
-                <a href="index.php" class="link"> Strona Glowna </a>
-            </div>
-            <div class="option">
-                <a href="nauka.php" class="link"> Nauka </a>
-            </div>
-            <div class="option"> Statystyki </div>
-            <div class="option"> Ciekawostki </div>
-            <div class="option"> Ankiety </div>
-            <div class="option"> Zglos </div>
-            <div class="option">
-                <a href="logowanie.php" class="link"> Logowanie </a>
-            </div>
-            <div style="clear:both;"> </div>
-        </div>
-    </div> -->
-
 
 <div class=zalogowanyUzytkownik>
     <label>
