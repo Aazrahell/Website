@@ -37,8 +37,6 @@ if ($conn == false) {
             $_SESSION['id'] = $login;
             $_SESSION['success'] = "Udalo sie zalogowac!";
 
-            sleep(5);
-
             echo ("<script>window.location.href = 'loginSuccess.php';</script>");
 
         } else {

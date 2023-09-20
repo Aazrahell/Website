@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE HTML>
 <html lang="pl">
 
@@ -21,7 +25,14 @@
         <div class="option"> Ankiety </div>
         <div class="option"> Zglos </div>
         <div class="option">
-            <a href="logowanie.php" class="link"> Logowanie </a>
+            <?php
+            if (isset($_SESSION['id'])) {
+                echo '<a href="loginSuccess.php" class="link">' . $_SESSION["id"] . '</a>';
+            } else {
+                echo '<a href="logowanie.php" class="link"> Logowanie </a>';
+            }
+            ?>
+
         </div>
         <div style="clear:both;"> </div>
     </div>

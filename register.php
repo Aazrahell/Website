@@ -15,10 +15,10 @@ if (isset($login) && isset($email) && isset($pass)) {
 	$wynik1 = mysqli_query($conn, $zapytanie1);
 
 	//    if (mysqli_num_rows($wynik1) > 0) {
-//		while($rowData = mysqli_fetch_array($wynik1)){
-//  			echo $rowData["name"].'<br>';
-//		}
-//	}
+	//		while($rowData = mysqli_fetch_array($wynik1)){
+	//  			echo $rowData["name"].'<br>';
+	//		}
+	//	}
 
 	if (mysqli_num_rows($wynik1) == 0) {
 		$sql = "INSERT INTO $dbName (id, name, pass, email)
