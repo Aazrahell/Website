@@ -79,8 +79,6 @@ session_start();
         <div class="option"> Ciekawostki </div>
         <div class="option"> Ankiety </div>
         <div class="option"> Zglos </div>
-
-
         <?php
 
         if (isset($_SESSION['id'])) {
@@ -93,14 +91,11 @@ session_start();
             echo '<a href="#">Ustawienia</a>';
             echo '<a href="logout.php">Wyloguj</a>';
             echo '</div>';
-
         } else {
             echo '<div class="option">';
             echo '<a href="logowanie.php" class="link"> Logowanie </a>';
             echo '</div>';
-
         }
-
         ?>
 
     </div>
