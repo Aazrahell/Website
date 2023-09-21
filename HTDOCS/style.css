@@ -25,6 +25,7 @@ body {
 }
 
 .option {
+    font-family: Serif;
     flex-grow: 1;
     font-size: 25px;
     padding: 15px;
