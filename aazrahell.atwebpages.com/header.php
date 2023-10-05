@@ -72,19 +72,21 @@ session_start();
 
     <div class="menu">
         <div class="option">
-            <a href="index.php" class="link"> Strona Glowna </a>
+            <a href="/" class="link"> Strona Glowna </a>
         </div>
-        <div class="option"> Nauka </div>
-        <div class="option"> Statystyki </div>
-        <div class="option"> Ciekawostki </div>
-        <div class="option"> Ankiety </div>
-        <div class="option"> Zglos </div>
+        <div class="option">
+            <a href="/chat" class="link"> Chat </a>
+        </div>
+        <div class="option"> Nope </div>
+        <div class="option"> Nope </div>
+        <div class="option"> Nope </div>
+        <div class="option"> Nope </div>
         <?php
 
         if (isset($_SESSION['id'])) {
             echo '<div class="dropdown">';
             echo '<button class="dropbtn">';
-            echo '<a href="loginSuccess.php" class="link">' . strtoupper($_SESSION["id"][0]) . strtolower(substr($_SESSION["id"], 1, strlen($_SESSION["id"]))) . '  </a>';
+            echo '<a href="loginSuccess" class="link">' . strtoupper($_SESSION["id"][0]) . strtolower(substr($_SESSION["id"], 1, strlen($_SESSION["id"]))) . '  </a>';
             echo '</button>';
             echo '<div class="dropdown-content">';
             echo '<a href="#">Profil</a>';
@@ -93,7 +95,7 @@ session_start();
             echo '</div>';
         } else {
             echo '<div class="option">';
-            echo '<a href="logowanie.php" class="link"> Logowanie </a>';
+            echo '<a href="logowanie" class="link"> Logowanie </a>';
             echo '</div>';
         }
         ?>

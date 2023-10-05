@@ -5,7 +5,7 @@ include "header.php";
 require_once "dbconn.php";
 
 if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
-    header('index.php');
+    header('Location: /');
     exit();
 }
 
@@ -25,8 +25,7 @@ $row = mysqli_fetch_assoc($query);
     <h2> Witaj
         <?php echo $_SESSION['id']; ?>
     </h2>
-    </br>
-    <h3> <a href="logout.php">Logout</a> </h3></br>
+
 </div>
 
 </html>

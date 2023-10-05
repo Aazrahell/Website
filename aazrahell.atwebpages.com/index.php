@@ -16,7 +16,7 @@ include "header.php";
 
 
 <div class="lorem">
-    <h2> Lorem Ipsum</h2> <br /> <br />
+    <h2> Lorem Ipsum </h2> <br /> <br />
     <h3>
         &emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci velit, ut sollicitudin ante
         pellentesque et. Suspendisse nec risus malesuada, suscipit tortor sed, ultrices massa. Nam non est sed leo

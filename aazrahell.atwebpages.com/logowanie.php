@@ -17,7 +17,7 @@ $row = mysqli_fetch_assoc($result);
     <tr>
         <td class=komorka>
             <h2> Zaloguj sie </h2>
-            <form action="login.php" method="post">
+            <form action="login" method="post">
                 <div class="panelLogowania">
                     <label>Nazwa uzytkownika</label> </br>
                     <input type="text" name="login"> </br>
@@ -30,7 +30,7 @@ $row = mysqli_fetch_assoc($result);
 
         <td class=komorka>
             <h2> Zarejestruj sie </h2>
-            <form action="register.php" method="post">
+            <form action="register" method="post">
                 <div class="panelRejestracji">
                     <label>Podaj nazwe</label> </br>
                     <input type="text" name="loginR"> </br>
